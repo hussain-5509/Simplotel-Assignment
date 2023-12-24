@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 228, 196);
+    margin-top: 200px;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 100px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 10 0px;
+}
+
+.column img {
+  margin-top: 8px;;
+  vertical-align:left;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 40%;
+    max-width: 40%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Make sure the body takes up the full height of the viewport */
+      margin: 0; /* Remove default body margin */
+    }
+
+    /* Basic styling for the card */
+    .card {
+        background-color:rgb(244, 87, 87) ;
+      width: 400px; /* Adjust the width as needed for a rectangle */
+      height: 200px; /* Adjust the height as needed for a rectangle */
+      border: 1px solid #ddd;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-left:120px;
+      margin-top:auto;
+      margin-bottom:auto;
+    }
+
+    /* Content styling */
+    .card-content {
+      padding: 15px;
+      text-align: left;
+    }
+
+    p{
+        font-size: 13px;
+        font-style:initial;
+    }
+
+    .button {
+  border: 2px solid rgb(244, 87, 87) ; /* Border color */
+  padding: 0px 05px; /* Adjust padding as needed */
+  font-size: 16px; /* Text size */
+  color: black; /* Font color */
+  background-color:rgb(244, 87, 87) ; 
+  cursor:pointer; 
+  border-radius: 5px; 
+    }
+
+    .image1 {
+        border: 2px solid rgb(244, 87, 87) ; 
+        float: right;
+
+  padding: 1px 50px;
+
+  padding-top:-15px;
+  padding-bottom: 0px;
+  font-size: 16px; /* Text size */
+  color: black; /* Font color */
+  background-color:rgb(244, 87, 87) ; 
+  cursor: pointer; 
+  border-radius: 5px
+    }
+</style>
+<body>
+  <div class="row"> 
+  <div class="column">
+    <img src="pexels-rachel-claire-6752433.jpg" style="width:70%" height="300">
+    <img src="pexels-eva-bronzini-6141651.jpg" style="width:70%" height="300">
+  </div>
+  
+  <div class="column">
+    <img src="pexels-mister-mister-3434523.jpg" style="width:80%" height="615" >
+  </div> 
+  
+  <div class="card">
+    <div class="card-content">
+      <p>LOREM IPSUM</p>
+      <h1>LOREM IPSUM
+        SET ADEMIR</h1>
+        
+        <button class="button">Click</button>
+        <div class="image1">
+        <img src="icons8-arrow-30.png" height="10" width="20">
+    </div>
+    </div>
+    <!-- <button class="button">Click </button> -->
+  </div>
+   
+  
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: bisque;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation styles */
+        nav {
+            width: 100%;
+            background-color: rgb(244, 87, 87); /* Background color for the entire header */
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center; /* Center the navigation items */
+            align-items: center;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            font-family: 'Source Code Pro', monospace;
+            font-weight: 700;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .menu-items {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu-items li {
+            margin-right: 20px;
+        }
+
+        .menu-items a {
+            text-decoration: none;
+            color: black;
+            padding: 8px 15px;
+            border: 2px solid rgb(244, 87, 87);;
+            border-radius: 5px;
+        }
+
+        /* Container for the two columns */
+        .content-wrapper {
+            font-size: 25px;
+            display: flex;
+            width: 90%;
+            margin-top: 0px;
+            margin-bottom: 60px;
+        }
+
+        /* Left column for content */
+        .content {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+            flex: 50; /* Take up 50% of the container */
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: bisque;
+            margin-bottom: 60px;
+        .heading{
+            font-size:50px;
+        }
+        }
+        .paragraph{
+            line-height: 50px;
+        }
+
+        /* Right column for the image */
+        .image {
+            flex: 50; /* Take up 50% of the container */
+            box-sizing: border-box;
+            background-color: bisque; /* Optional: Set background color */
+            height: 990px;
+        }
+
+        /* Style for the image to fill the container */
+        .image img {
+            width: 112%;
+            height: 115%;
+            object-fit: cover; /* Optional: Maintain aspect ratio */
+        }
+
+        /* Button style */
+        .button {
+            background-color: rgb(245, 104, 137);
+            color: rgb(248, 244, 244);
+            padding: 15px 80px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-top: 100px;
+        }
+
+    </style>
+    <title>Your Responsive Website</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul class="menu-items">
+                <li><a href="C:\Users\91733\Desktop\page2.html">Home</a></li>
+                <li><a href="#Order">Order</a></li>
+                <li><a href="#Food">Food</a></li>
+                <li><a href="#restaurant">Restaurant</a></li>
+                <li><a href="#Testimonials">Testimonials</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+            </ul>
+            <div class="menu-icon"></div>
+            <img src="menu-bar.png" alt="menu-icon" height="30" width="35">
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="content">
+            <br>
+            <br>
+            <div class="heading">
+            <h1>LOREM IPSUM</h1></div>
+            <br>
+            <br>
+            <div class="paragraph">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                id est vitae dolor rhoncus tristique. Maecenas metus quam,
+                rhoncus euismod lorem in, sollicitudin viverra eros. Donec
+                dictum luctus quam ut tristique. Curabitur nec faucibus purus.
+                Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+                Sed pulvinar, massa ac porta viverra.</p>
+            </div>
+            <button class="button">Click Me</button>
+        </div>
+        <div class="image">
+            <img src="pexels-robin-stickel-70497.jpg" alt="Your Image">
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menuItems = document.querySelector('.menu-items');
+            menuItems.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
